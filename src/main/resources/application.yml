@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://productnew.database.windows.net:1433;database=productdb;user=sumrah@productnew;password={your_password_here};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: sumrah
+    password: Sum14@2022
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect : org.hibernate.dialect.SQLServer2012Dialect
+
+server:
+  port: 9191
